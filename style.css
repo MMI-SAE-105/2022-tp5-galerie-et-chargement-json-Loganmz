@@ -1,39 +1,45 @@
 .overlay {
-    /* Sit on top of the page content */
+    top: 0;
     
-    /* Full width (cover the whole page) */
     /* Full height (cover the whole page) */
     /* Stay at the top */
     /* Stay at the left */
     /* Stay at the right */
     /* Stay at the bottom */
-    /* Black background with opacity */
-    /* Add a pointer on hover */
-    /* Use a grid for easy centering */
-    /* Center vertically and horizontally */
+    background-color: rgb(0, 0, 0,0.6);
+    cursor: pointer;
+    display: grid;
+    align-content: center;
+
 }
+
+
+    /* Center vertically and horizontally */
+
 .overlay::after {
     /* Add content : "X" */
-    /* White text color */
-    /* Black background color */
-    /* Font family "sans-serif" */
-    /* Centered text */
+    color: white;
+    background-color: black;
+    font-family: sans-serif;
+    
     /* Line height ( idem height ) */
-    /* Display as a block */
-    /* Position absolute */
-    /* 1rem from the top */
-    /* 1rem from the right */
-    /* 2rem width */
-    /* 2rem height */
-    /* White border of 2px */
-    /* Rounded border */
+    display: block;
+    position: absolute;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    border-color: white;
+    /* 2px border */
+    border-radius: 0.625rem;
 }
 .overlay>figure {
-    /* No margin */
-    /* 1rem padding */
+    margin: 0rem;
+    padding: 1rem;
+    border-color: white;
     /* White border of 2px */
 }
 .overlay>figure>img {
     /* Max width 100% for responsive image */
-    /* Height auto for keeping the ratio */
+    height: auto;
 }
